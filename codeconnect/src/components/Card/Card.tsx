@@ -19,7 +19,7 @@ interface CardProps {
   };
 }
 
-const Card: React.FC<CardProps> = ({ id, imagemUrl, titulo, resumo, LinhasDeCodigo, compartilhamentos, comentarios, usuario }) => {
+const Card: React.FC<CardProps> = ({ imagemUrl, titulo, resumo, LinhasDeCodigo, compartilhamentos, comentarios, usuario }) => {
   return (
     <article className="card">
       <div className="card__imagem">
@@ -54,6 +54,7 @@ const Card: React.FC<CardProps> = ({ id, imagemUrl, titulo, resumo, LinhasDeCodi
         </div>
       </div>
     </article>
+    
   );
 };
 
